@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - E-Book Creator</title>
+    <link rel="stylesheet" href="learn-more.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Network Background Canvas -->
+    <canvas id="networkCanvas"></canvas>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">InkuBook</a>
+            <nav class="nav-links">
+                <a href="/About/about.html">About</a>
+                <a href="/Contact/contact.html">Contact Us</a>
+                <a href="/Login/login.html" id="login-btn">Login</a>
+                <div id="user-avatar" class="avatar-circle" style="display: none;" title="Your Account"></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="learn-more-container">
+        <div class="learn-more-content">
+            <h1>Discover the Power of E-Book Creator</h1>
+            <p class="subtitle">Transform your ideas into professional publications with our cutting-edge platform</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Intuitive Authoring</h3>
+                    <p>Our user-friendly interface makes writing and formatting your e-book effortless, with real-time
+                        previews and smart suggestions.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Professional Templates</h3>
+                    <p>Choose from hundreds of professionally designed templates for any genre or purpose, from novels
+                        to cookbooks to business reports.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>AI-Powered Assistance</h3>
+                    <p>Let our AI assist you with content creation, grammar checking, and even generating cover designs
+                        based on your book's theme.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Track your book's performance with detailed analytics on reader engagement, sales, and
+                        demographic insights.</p>
+                </div>
+            </div>
+
+            <div class="workflow-section">
+                <h2>How It Works</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Create Your Account</h3>
+                            <p>Sign up in seconds and access our full suite of tools and templates.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Write & Design</h3>
+                            <p>Add your content, customize layouts, and perfect your design with our intuitive editor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Export & Publish</h3>
+                            <p>Export in multiple formats (PDF, EPUB, MOBI) and publish directly to major platforms.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Market & Analyze</h3>
+                            <p>Use our built-in marketing tools and analytics to reach your audience and track
+                                performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Is E-Book Creator free to use?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes! We offer a free tier that includes basic features to get you started. Premium plans
+                                are available for advanced features and higher publishing volumes.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What formats are supported for export?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We support all major e-book formats including PDF, EPUB, and MOBI, ensuring compatibility
+                                with all e-readers and platforms.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Can I collaborate with others on my e-book?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Our platform allows real-time collaboration with co-authors, editors, and designers,
+                                making teamwork seamless.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How do I publish my e-book once it's complete?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Our platform integrates directly with major publishing platforms like Amazon KDP, Apple
+                                Books, and Google Play Books, allowing one-click publishing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="50000">50K+</h3>
+                        <p>Authors</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="100000">100K+</h3>
+                        <p>Books Created</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="1000000">1M+</h3>
+                        <p>Readers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="120">120+</h3>
+                        <p>Countries</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="floating-shapes">
+                    <div class="shape1"></div>
+                    <div class="shape2"></div>
+                </div>
+                <h2>Ready to Start Your Publishing Journey?</h2>
+                <p>Join thousands of authors who have already published with us</p>
+                <div class="cta-buttons">
+                    <a id="get-started-btn" href="#" class="button button-primary">Start Creating</a>
+                    <a href="/Home/index.html" class="button button-secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to E-Book Creator</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="button button-primary">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="logout-modal" class="modal">
+        <div class="modal-content">
+            <h3>Are you sure you want to log out?</h3>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                <button id="confirm-logout" class="button button-primary">Yes, Log Out</button>
+                <button id="cancel-logout" class="button button-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="learn-more.js"></script>
+</body>
+
+</html>
