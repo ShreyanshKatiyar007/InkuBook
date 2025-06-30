@@ -33,6 +33,8 @@
         <input type="text" id="documentTitle" value="Untitled Document" />
       </div>
       <div class="app-actions">
+        <button id="newDocBtn" class="action-btn"><i class="fas fa-file"></i> New</button>
+        <button id="openDocBtn" class="action-btn"><i class="fas fa-folder-open"></i> Open</button>
         <button id="saveBtn" class="action-btn"><i class="fas fa-save"></i> Save</button>
         <button id="exportBtn" class="action-btn"><i class="fas fa-file-export"></i> Export</button>
         <button id="printBtn" class="action-btn"><i class="fas fa-print"></i> Print</button>
@@ -61,11 +63,23 @@
         <!-- Home Tab -->
         <div class="ribbon-panel active" id="home-panel">
           <div class="ribbon-group">
+            <div class="ribbon-group-title">File</div>
+            <div class="ribbon-controls">
+              <button id="showTemplatesBtn" class="ribbon-button" title="Browse Templates">
+                <i class="fas fa-th-large"></i><span>Templates</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="ribbon-group">
             <div class="ribbon-group-title">Clipboard</div>
             <div class="ribbon-controls">
-              <button class="ribbon-button" onclick="execCmd('paste')" title="Paste"><i class="fas fa-paste"></i><span>Paste</span></button>
-              <button class="ribbon-button" title="Cut" onclick="execCmd('cut')"><i class="fas fa-cut"></i><span>Cut</span></button>
-              <button class="ribbon-button" title="Copy" onclick="execCmd('copy')"><i class="fas fa-copy"></i><span>Copy</span></button>
+              <button class="ribbon-button" onclick="execCmd('paste')" title="Paste"><i
+                  class="fas fa-paste"></i><span>Paste</span></button>
+              <button class="ribbon-button" title="Cut" onclick="execCmd('cut')"><i
+                  class="fas fa-cut"></i><span>Cut</span></button>
+              <button class="ribbon-button" title="Copy" onclick="execCmd('copy')"><i
+                  class="fas fa-copy"></i><span>Copy</span></button>
             </div>
           </div>
 
@@ -97,11 +111,16 @@
 
               <div class="ribbon-button-group">
                 <button class="ribbon-button" onclick="setBold()" title="Bold"><i class="fas fa-bold"></i></button>
-                <button class="ribbon-button" onclick="setItalic()" title="Italic"><i class="fas fa-italic"></i></button>
-                <button class="ribbon-button" onclick="setUnderline()" title="Underline"><i class="fas fa-underline"></i></button>
-                <button class="ribbon-button" onclick="execCmd('strikeThrough')" title="Strikethrough"><i class="fas fa-strikethrough"></i></button>
-                <button class="ribbon-button" onclick="execCmd('subscript')" title="Subscript"><i class="fas fa-subscript"></i></button>
-                <button class="ribbon-button" onclick="execCmd('superscript')" title="Superscript"><i class="fas fa-superscript"></i></button>
+                <button class="ribbon-button" onclick="setItalic()" title="Italic"><i
+                    class="fas fa-italic"></i></button>
+                <button class="ribbon-button" onclick="setUnderline()" title="Underline"><i
+                    class="fas fa-underline"></i></button>
+                <button class="ribbon-button" onclick="execCmd('strikeThrough')" title="Strikethrough"><i
+                    class="fas fa-strikethrough"></i></button>
+                <button class="ribbon-button" onclick="execCmd('subscript')" title="Subscript"><i
+                    class="fas fa-subscript"></i></button>
+                <button class="ribbon-button" onclick="execCmd('superscript')" title="Superscript"><i
+                    class="fas fa-superscript"></i></button>
               </div>
 
               <div class="ribbon-button-group">
@@ -115,10 +134,14 @@
             <div class="ribbon-group-title">Paragraph</div>
             <div class="ribbon-controls">
               <div class="ribbon-button-group">
-                <button class="ribbon-button" onclick="execCmd('justifyLeft')" title="Align Left"><i class="fas fa-align-left"></i></button>
-                <button class="ribbon-button" onclick="execCmd('justifyCenter')" title="Align Center"><i class="fas fa-align-center"></i></button>
-                <button class="ribbon-button" onclick="execCmd('justifyRight')" title="Align Right"><i class="fas fa-align-right"></i></button>
-                <button class="ribbon-button" onclick="execCmd('justifyFull')" title="Justify"><i class="fas fa-align-justify"></i></button>
+                <button class="ribbon-button" onclick="execCmd('justifyLeft')" title="Align Left"><i
+                    class="fas fa-align-left"></i></button>
+                <button class="ribbon-button" onclick="execCmd('justifyCenter')" title="Align Center"><i
+                    class="fas fa-align-center"></i></button>
+                <button class="ribbon-button" onclick="execCmd('justifyRight')" title="Align Right"><i
+                    class="fas fa-align-right"></i></button>
+                <button class="ribbon-button" onclick="execCmd('justifyFull')" title="Justify"><i
+                    class="fas fa-align-justify"></i></button>
               </div>
 
               <div class="ribbon-button-group">
@@ -129,12 +152,15 @@
                   <option value="upper-roman">I. Roman</option>
                   <option value="check">✓ Check</option>
                 </select>
-                <button class="ribbon-button" onclick="applyList()" title="Apply List"><i class="fas fa-list"></i></button>
+                <button class="ribbon-button" onclick="applyList()" title="Apply List"><i
+                    class="fas fa-list"></i></button>
               </div>
 
               <div class="ribbon-button-group">
-                <button class="ribbon-button" onclick="execCmd('indent')" title="Increase Indent"><i class="fas fa-indent"></i></button>
-                <button class="ribbon-button" onclick="execCmd('outdent')" title="Decrease Indent"><i class="fas fa-outdent"></i></button>
+                <button class="ribbon-button" onclick="execCmd('indent')" title="Increase Indent"><i
+                    class="fas fa-indent"></i></button>
+                <button class="ribbon-button" onclick="execCmd('outdent')" title="Decrease Indent"><i
+                    class="fas fa-outdent"></i></button>
               </div>
 
               <select id="lineHeightSelect" class="ribbon-select" onchange="applyLineHeight()">
@@ -253,7 +279,8 @@
             <div class="ribbon-group-title">Page Setup</div>
             <div class="ribbon-controls">
               <div class="ribbon-button-group">
-                <button class="ribbon-button active" onclick="setPageOrientation('portrait')" title="Portrait Orientation">
+                <button class="ribbon-button active" onclick="setPageOrientation('portrait')"
+                  title="Portrait Orientation">
                   <i class="fas fa-file-alt"></i>
                   <span>Portrait</span>
                 </button>
@@ -457,7 +484,7 @@
     <div class="template-selector" id="templateSelector">
       <div class="template-header">
         <h3>Select a Template</h3>
-        <button class="close-templates">&times;</button>
+        <button class="close-templates" id="closeTemplatesBtn">&times;</button>
       </div>
       <div class="template-grid">
         <div class="template-item" data-template="blank">
@@ -505,7 +532,13 @@
         </div>
         <div class="sidebar-section">
           <h3>Templates</h3>
-          <button id="showTemplatesBtn" class="sidebar-button">Browse Templates</button>
+          <button id="showTemplatesSidebarBtn" class="sidebar-button">Browse Templates</button>
+        </div>
+        <div class="sidebar-section">
+          <h3>Recent Documents</h3>
+          <div id="recentDocuments" class="recent-documents">
+            <!-- Recent documents will be populated here -->
+          </div>
         </div>
         <div class="sidebar-section">
           <h3>Document Stats</h3>
@@ -552,7 +585,38 @@
     </div>
   </div>
 
-  <!-- All Modals -->
+  <!-- Open Document Modal -->
+  <div id="openDocModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeOpenModal">&times;</span>
+      <h2>Open Document</h2>
+      <div class="saved-documents-list" id="savedDocumentsList">
+        <!-- Saved documents will be populated here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Export Options Modal -->
+  <div id="exportModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeExportModal">&times;</span>
+      <h2>Export Document</h2>
+      <div class="modal-form">
+        <div class="form-group">
+          <label>Export Format:</label>
+          <select id="exportFormat" class="ribbon-select">
+            <option value="html">HTML</option>
+            <option value="pdf">PDF (Print)</option>
+            <option value="txt">Plain Text</option>
+            <option value="docx">Word Document (Basic)</option>
+          </select>
+        </div>
+        <button id="confirmExportBtn" class="modal-button">Export</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- All other existing modals -->
   <div id="tableModal" class="modal">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
@@ -611,7 +675,6 @@
     </div>
   </div>
 
-  <!-- FIXED: Added missing Chart Modal -->
   <div id="chartModal" class="modal">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
@@ -639,7 +702,6 @@
     </div>
   </div>
 
-  <!-- FIXED: Added missing Shape Modal -->
   <div id="shapeModal" class="modal">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
