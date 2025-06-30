@@ -2,9 +2,10 @@
     --primary: #6C63FF;
     --secondary: #4CAF50;
     --accent: #FF6B6B;
-    --background: #0A0E17;
+    --background: #0A0E17; 
     --text: #E2E8F0;
     --card-bg: rgba(255, 255, 255, 0.05);
+
 }
 
 /* Custom scrollbar */
