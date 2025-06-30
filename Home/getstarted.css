@@ -86,7 +86,7 @@ body {
   z-index: -1;
 }
 
-/* FIXED: Toast Notification - Proper positioning */
+/* Toast Notification */
 .toast {
   position: fixed;
   top: 20px;
@@ -341,7 +341,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Fix for font style and font size dropdowns */
 .ribbon-select {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid var(--ribbon-border);
@@ -514,6 +513,103 @@ body {
   font-size: 0.9rem;
 }
 
+/* Recent Documents */
+.recent-documents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recent-doc-item {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.recent-doc-item:hover {
+  background: var(--ribbon-hover);
+  border-color: var(--primary);
+}
+
+.recent-doc-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.recent-doc-date {
+  font-size: 0.7rem;
+  color: var(--ribbon-group-title);
+}
+
+/* Saved Documents List */
+.saved-documents-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.saved-doc-item {
+  padding: 1rem;
+  border: 1px solid var(--ribbon-border);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saved-doc-item:hover {
+  background: var(--ribbon-hover);
+  border-color: var(--primary);
+}
+
+.saved-doc-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.saved-doc-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--ribbon-group-title);
+}
+
+.saved-doc-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.doc-action-btn {
+  padding: 0.2rem 0.5rem;
+  background: transparent;
+  border: 1px solid var(--ribbon-border);
+  color: var(--text);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.doc-action-btn:hover {
+  background: var(--ribbon-hover);
+  border-color: var(--primary);
+}
+
+.doc-action-btn.delete {
+  color: var(--error);
+  border-color: var(--error);
+}
+
+.doc-action-btn.delete:hover {
+  background: var(--error);
+  color: white;
+}
+
 /* Document Area */
 .document-area {
   flex: 1;
@@ -563,10 +659,10 @@ body {
 }
 
 .page {
-  width: 794px; /* A4 width in pixels at 96dpi */
-  min-height: 1123px; /* A4 height in pixels at 96dpi */
+  width: 794px;
+  min-height: 1123px;
   background: var(--document-bg);
-  padding: 72px; /* 1 inch margins */
+  padding: 72px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   outline: none;
   color: var(--document-text);
@@ -703,7 +799,7 @@ body {
   color: var(--text);
 }
 
-/* Make sure modals are properly displayed */
+/* Modals */
 .modal {
   display: none;
   position: fixed;
@@ -1107,7 +1203,7 @@ body {
   }
 }
 
-/* FIXED: Print styles - Added comprehensive print media query */
+/* Print styles */
 @media print {
   .app-header,
   .ribbon,
