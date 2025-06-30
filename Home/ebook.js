@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	initCounterAnimation();
 	initLoginModal();
 	initUserAvatar(); // Added user avatar/login UI initialization
+	initGetStartedButton();
 });
 
 // User avatar and login button display logic
@@ -103,7 +104,7 @@ function initNetworkBackground() {
 	}
 
 	function animate() {
-		ctx.fillStyle = "rgba(10, 14, 23, 0.1)";
+		ctx.fillStyle = "rgba(10, 14, 23, 0.1)"; 
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 		for (let i = 0; i < particles.length; i++) {
@@ -325,3 +326,22 @@ function initLoginModal() {
 		}
 	});
 }
+
+function initGetStartedButton() {
+	const getStartedBtn = document.getElementById("get-started-btn");
+
+	getStartedBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+
+		const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+		if (currentUser) {
+			// Open getstarted.html in a new tab
+			window.open("getstarted.html", "_blank");
+		} else {
+			alert("Please log in to start creating your eBook.");
+			window.location.href = "/Login/login.html";
+		}
+	});
+}
+
