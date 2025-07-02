@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Book Creator</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Network animation canvas -->
+    <canvas id="network-canvas"></canvas>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">InkuBook</a>
+            <nav class="nav-links">
+                <a href="/Home/index.html">Home</a>
+                <a href="/About/about.html" class="active">About</a>
+                <a href="/Contact/contact.html">Contact Us</a>
+                <a href="/Login/login.html" id="login-btn">Login</a>
+                <div id="user-avatar" class="avatar-circle" style="display: none;" title="Your Account"></div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>About <span>E-Book Creator</span></h1>
+            <p>We're here to help you build beautiful, professional eBooks in minutes. Whether you're an author,
+                teacher, or entrepreneur, our tools give you the power to design, customize, and publish your content
+                effortlessly.</p>
+        </div>
+    </section>
+
+    <section class="about-features">
+        <div class="about-features-grid">
+            <div class="about-feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Create & Customize</h3>
+                <p>Use our drag-and-drop editor to structure and personalize your eBook exactly how you envision it.</p>
+            </div>
+            <div class="about-feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-export"></i>
+                </div>
+                <h3>Export Easily</h3>
+                <p>Download your work in PDF, EPUB, or MOBI formats to reach your readers on any device.</p>
+            </div>
+            <div class="about-feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Publish Anywhere</h3>
+                <p>Publish online, generate shareable links, or integrate with marketplaces. The world is your audience!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-mission">
+        <div class="floating-shapes">
+            <div class="shape1"></div>
+            <div class="shape2"></div>
+        </div>
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>We believe that everyone has a story to tell. Our mission is to provide the tools that make publishing
+                accessible to all, regardless of technical expertise or design background.</p>
+            <a href="/Home/learn-more.html" class="button button-primary">Learn More</a>
+        </div>
+    </section>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to E-Book Creator</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="button button-primary">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="logout-modal" class="modal">
+        <div class="modal-content">
+            <h3>Are you sure you want to log out?</h3>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                <button id="confirm-logout" class="button button-primary">Yes, Log Out</button>
+                <button id="cancel-logout" class="button button-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="about.js"></script>
+</body>
+
+</html>
