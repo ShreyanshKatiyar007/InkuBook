@@ -40,41 +40,40 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 
 
 🛠️ Tech Stack
-HTML5
+🔧 HTML5
+🧱 Built the semantic structure of all pages
 
-Built the semantic structure of all pages
+🌐 Ensured accessibility and SEO-readiness
 
-Ensured accessibility and SEO-readiness
+🎨 CSS3
+🌑 Designed a sleek, dark-themed UI using CSS variables
 
-CSS3
+✨ Added animations, transitions, and hover effects for visual engagement
 
-Designed an elegant dark-themed UI with variables
+📱 Implemented responsive layouts with Flexbox and Grid
 
-Added advanced animations, hover effects, and visual polish
+⚙️ JavaScript (Vanilla)
+✅ Handled form validation, login/signup modals, and user feedback
 
-Implemented responsive layouts using Flexbox and Grid
+💾 Managed session states using localStorage
 
-JavaScript (Vanilla)
+🖱️ Powered interactive UI components like custom cursors, avatars, and logout modals
 
-Handled form validation, authentication, and modals
+🧬 Canvas API
+🌌 Created animated particle backgrounds for immersive design
 
-Managed session states using localStorage
+🚀 Ensured smooth performance and device responsiveness
 
-Powered UI interactions like avatars, modals, and animations
+🖼️ Font Awesome
+🎯 Integrated modern icons for navigation, branding, and features
 
-Canvas API
+💡 Enhanced readability and UX without increasing load time
 
-Created interactive, animated particle backgrounds
-
-Ensured performance efficiency and device responsiveness
-
-Font Awesome
-
-Used for clean and modern iconography throughout the interface
 
 
 
 📚 Ideal Use Cases
+
 🎓 Writing academic essays and research papers
 
 🧑‍💼 Designing professional resumes and CVs
@@ -87,7 +86,10 @@ Used for clean and modern iconography throughout the interface
 
 
 
+
+
 📈 Future Scope
+
 InkuBook will grow into a full-fledged self-publishing ecosystem, including:
 
 ✨ Real-Time Collaboration — Multiple authors editing together (like Google Docs)
@@ -106,8 +108,10 @@ InkuBook will grow into a full-fledged self-publishing ecosystem, including:
 
 
 
+
 💡 Our Mission
 “We believe that every creator deserves freedom from gatekeepers. InkuBook gives you the power to write, design, and publish your content — beautifully, independently, and affordably.”
+
 
 
 
@@ -126,6 +130,7 @@ Love the vision? Join the journey:
 
 
 
+
 🌟 Show Support
 If you like InkuBook, you can:
 
@@ -134,6 +139,7 @@ If you like InkuBook, you can:
 🛠️ Fork and experiment with new features
 
 📣 Share it with friends, developers, and creators
+
 
 
 
