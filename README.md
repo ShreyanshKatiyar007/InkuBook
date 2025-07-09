@@ -1,5 +1,8 @@
 ✨ InkuBook — Design. Write. Publish.
-Your all-in-one modern eBook creator & self-publishing toolkit
+
+
+Your all-in-one modern eBook creator & self-publishing toolkit.
+
 📚 InkuBook is a browser-based platform built to empower writers, students, educators, researchers, and professionals to craft stunning documents — all without relying on third-party publishers like Amazon Kindle.
 
 Whether you're:
@@ -14,7 +17,10 @@ Or designing a report or essay
 
 InkuBook gives you a clean, Word-like writing experience — right inside your browser.
 
+
+
 🚀 What You Can Do
+
 📝 Write structured, rich-text content with clean formatting
 
 📄 Create resumes, novels, essays, and research papers
@@ -30,6 +36,8 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 💌 Use a responsive, validated contact form to reach out
 
 🌌 Experience immersive canvas animations and custom cursor effects
+
+
 
 🛠️ Tech Stack
 HTML5
@@ -64,6 +72,8 @@ Font Awesome
 
 Used for clean and modern iconography throughout the interface
 
+
+
 📚 Ideal Use Cases
 🎓 Writing academic essays and research papers
 
@@ -74,6 +84,8 @@ Used for clean and modern iconography throughout the interface
 🧪 Preparing lab reports, journals, or documentation
 
 📰 Creating e-books, blog templates, or publication drafts
+
+
 
 📈 Future Scope
 InkuBook will grow into a full-fledged self-publishing ecosystem, including:
@@ -92,8 +104,12 @@ InkuBook will grow into a full-fledged self-publishing ecosystem, including:
 
 💳 Payment Integration — Support for Stripe, Razorpay, and UPI for direct sales
 
+
+
 💡 Our Mission
 “We believe that every creator deserves freedom from gatekeepers. InkuBook gives you the power to write, design, and publish your content — beautifully, independently, and affordably.”
+
+
 
 🤝 How to Contribute
 Love the vision? Join the journey:
@@ -108,6 +124,8 @@ Love the vision? Join the journey:
 
 💡 Suggest features or improvements anytime!
 
+
+
 🌟 Show Support
 If you like InkuBook, you can:
 
@@ -116,6 +134,8 @@ If you like InkuBook, you can:
 🛠️ Fork and experiment with new features
 
 📣 Share it with friends, developers, and creators
+
+
 
 👨‍💻 Developer
 Shreyansh Katiyar
