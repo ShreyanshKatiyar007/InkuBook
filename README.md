@@ -40,6 +40,7 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 
 
 🛠️ Tech Stack
+
 🔧 HTML5
 🧱 Built the semantic structure of all pages
 
@@ -67,7 +68,8 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 🖼️ Font Awesome
 🎯 Integrated modern icons for navigation, branding, and features
 
-💡 Enhanced readability and UX without increasing load time
+💡 Enhanced readability and UX without increasing load time.
+
 
 
 
@@ -82,7 +84,8 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 
 🧪 Preparing lab reports, journals, or documentation
 
-📰 Creating e-books, blog templates, or publication drafts
+📰 Creating e-books, blog templates, or publication drafts.
+
 
 
 
@@ -104,7 +107,8 @@ InkuBook will grow into a full-fledged self-publishing ecosystem, including:
 
 📊 Author Dashboard — Track document views, downloads, and engagement
 
-💳 Payment Integration — Support for Stripe, Razorpay, and UPI for direct sales
+💳 Payment Integration — Support for Stripe, Razorpay, and UPI for direct sales.
+
 
 
 
