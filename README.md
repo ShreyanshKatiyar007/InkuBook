@@ -42,11 +42,13 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 🛠️ Tech Stack
 
 🔧 HTML5
+
 🧱 Built the semantic structure of all pages
 
 🌐 Ensured accessibility and SEO-readiness
 
 🎨 CSS3
+
 🌑 Designed a sleek, dark-themed UI using CSS variables
 
 ✨ Added animations, transitions, and hover effects for visual engagement
@@ -54,6 +56,7 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 📱 Implemented responsive layouts with Flexbox and Grid
 
 ⚙️ JavaScript (Vanilla)
+
 ✅ Handled form validation, login/signup modals, and user feedback
 
 💾 Managed session states using localStorage
@@ -61,11 +64,13 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 🖱️ Powered interactive UI components like custom cursors, avatars, and logout modals
 
 🧬 Canvas API
+
 🌌 Created animated particle backgrounds for immersive design
 
 🚀 Ensured smooth performance and device responsiveness
 
 🖼️ Font Awesome
+
 🎯 Integrated modern icons for navigation, branding, and features
 
 💡 Enhanced readability and UX without increasing load time.
@@ -114,12 +119,14 @@ InkuBook will grow into a full-fledged self-publishing ecosystem, including:
 
 
 💡 Our Mission
+
 “We believe that every creator deserves freedom from gatekeepers. InkuBook gives you the power to write, design, and publish your content — beautifully, independently, and affordably.”
 
 
 
 
 🤝 How to Contribute
+
 Love the vision? Join the journey:
 
 🍴 Fork the repository
@@ -136,6 +143,7 @@ Love the vision? Join the journey:
 
 
 🌟 Show Support
+
 If you like InkuBook, you can:
 
 ⭐ Star this repo to spread the word
