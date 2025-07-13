@@ -8,6 +8,11 @@ to craft stunning documents — without relying on third-party publishers like A
 
 
 
+
+
+
+
+
 🧾 Whether you're:
 
 ✅ Building a professional resume
@@ -19,6 +24,12 @@ to craft stunning documents — without relying on third-party publishers like A
 📝 Designing a report or academic essay
 
 InkuBook gives you a clean, Word-like writing experience — right inside your browser.
+
+
+
+
+
+
 
 
 
@@ -39,6 +50,11 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 💌 Reach out through a validated contact form
 
 🌌 Experience immersive particle backgrounds and custom cursors
+
+
+
+
+
 
 
 
@@ -80,6 +96,12 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 
 
 
+
+
+
+
+
+
 📚 Ideal Use Cases
 
 🎓 Writing academic essays & research documentation
@@ -91,6 +113,12 @@ InkuBook gives you a clean, Word-like writing experience — right inside your b
 🧪 Preparing technical reports, lab journals, or portfolios
 
 📰 Drafting eBooks, blogs, or publication-ready content
+
+
+
+
+
+
 
 
 
@@ -114,11 +142,23 @@ InkuBook will evolve into a complete self-publishing ecosystem:
 
 
 
+
+
+
+
+
+
+
 💡 Our Mission
 
 “We believe every creator deserves freedom from gatekeepers.
 InkuBook puts the power to write, design, and publish directly in your hands —
 beautifully, independently, and affordably.”
+
+
+
+
+
 
 
 
@@ -138,6 +178,13 @@ Love the vision? Join us:
 
 
 
+
+
+
+
+
+
+
 🌟 Show Support
 
 If you like InkuBook:
@@ -147,6 +194,12 @@ If you like InkuBook:
 🛠️ Fork it and experiment with your ideas
 
 📣 Share it with creators, developers, and dreamers
+
+
+
+
+
+
 
 
 
