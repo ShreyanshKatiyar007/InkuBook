@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkuBook</title>
+    <link rel="stylesheet" href="ebook.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body onload="initUserAvatar()">
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Network Background Canvas (replacing particles-js) -->
+    <canvas id="networkCanvas"></canvas>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="/Home/index.html" class="logo">InkuBook</a>
+            <nav class="nav-links">
+                <a href="/About/about.html">About</a>
+                <a href="/Contact/contact.html">Contact Us</a>
+                <!-- Login Button (shown only when logged out) -->
+                <a id="login-btn" href="/Login/login.html" class="btn">Login</a>
+
+                <!-- User Avatar (shown only when logged in) -->
+                <div id="user-avatar" class="avatar-circle" style="display: none;" title="Your Account"></div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Where Imagination Meets Ink — InkuBook.</h1>
+            <p>Create with Intention. Publish with Perfection.</p>
+            <div class="cta-buttons">
+                <a id="get-started-btn" href="getstarted.html" class="button button-primary">Get Started</a>
+                <a href="learn-more.html" class="button button-primary">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                </div>
+                <h3>AI-Powered Writing</h3>
+                <p>Let our AI assist you in creating compelling content and stunning layouts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Professional Templates</h3>
+                <p>Choose from hundreds of professionally designed templates.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Analytics Dashboard</h3>
+                <p>Track your book's performance with detailed analytics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3 class="counter">50K+</h3>
+                <p>Authors</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter">100K+</h3>
+                <p>Books Created</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter">1M+</h3>
+                <p>Readers</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="floating-shapes">
+            <div class="shape1"></div>
+            <div class="shape2"></div>
+        </div>
+        <h2>Ready to Start Your Publishing Journey?</h2>
+        <p>Join thousands of authors who have already published with us</p>
+        <a href="/Home/getstarted.html" class="button button-primary">Start Creating</a>
+    </section>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to E-Book Creator</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="button button-primary">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="logout-modal" class="modal">
+        <div class="modal-content">
+            <h3>Are you sure you want to log out?</h3>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                <button id="confirm-logout" class="button button-primary">Yes, Log Out</button>
+                <button id="cancel-logout" class="button button-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="ebook.js"></script>
+</body>
+
+</html>
